@@ -1,0 +1,569 @@
+# Rust
+/target/
+target/
+Cargo.lock
+*.pdb
+**/*.rs.bk
+*.orig
+
+# Claude Code (MUST EXCLUDE)
+.claude/
+CLAUDE.md
+settings.local.json
+templates/
+README-LOCAL-MCP-SERVER.md
+REMOTE-INSTALLATION-SYSTEM.md
+settings.local.json
+TODO.md
+
+
+
+# Environment variables and secrets (NEVER COMMIT)
+.env
+.env.local
+.env.production
+.env.staging
+.env.development
+.env.test
+# Allow example files
+!.env.example
+!*.env.example
+
+# AWS and Cloud Provider Credentials (SECURITY CRITICAL)
+.aws/
+aws-credentials
+aws-config
+credentials
+AWS_*
+*.aws
+.gcp/
+.azure/
+service-account*.json
+gcloud-service-key.json
+GOOGLE_APPLICATION_CREDENTIALS*
+AZURE_*
+# Allow example files
+!aws-credentials.example
+!service-account.json.example
+
+# API Keys and Authentication Tokens (SECURITY CRITICAL)
+*api*key*
+*secret*
+*token*
+*password*
+*credential*
+.auth
+auth.json
+api_keys.txt
+secrets.txt
+*.token
+# Allow example files
+!*api*key*.example
+!*secret*.example
+!*token*.example
+!*password*.example
+!*credential*.example
+!auth.json.example
+!api_keys.txt.example
+!secrets.txt.example
+
+# Configuration files with secrets
+config.toml
+config.local.toml
+config.production.toml
+config.staging.toml
+config.development.toml
+config.json
+config.local.json
+config.override.json
+servers.local.json
+production.yaml
+staging.yaml
+secrets.yaml
+# Allow example/template files
+!config.toml.example
+!config.example.toml
+!config.json.example
+!config.example.json
+!servers.json.example
+!production.yaml.example
+!staging.yaml.example
+!secrets.yaml.example
+
+# Database files (contain sensitive data)
+*.db
+*.sqlite
+*.sqlite3
+ssh_mcp.db*
+*.db-*
+
+# SSL/TLS certificates and keys (SECURITY CRITICAL)
+*.pem
+*.crt
+*.key
+*.p12
+*.pfx
+*.csr
+*.ca-bundle
+ssl/
+certs/
+certificates/
+
+# SSH keys (SECURITY CRITICAL - NEVER COMMIT)
+keys/
+*.rsa
+*.dsa
+*.ecdsa
+*.ed25519
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+known_hosts
+authorized_keys
+ssh_host_*
+
+# HashiCorp Vault files
+vault_data/
+.vault_token
+vault.hcl
+.vault/
+
+# Backup files (encrypted but should not be in repo)
+backups/
+*.backup
+*.enc
+*.bak
+*.old
+
+# Installation state and secrets
+.install_progress
+.master_keys
+.totp_secrets
+.installation_state
+installation/secrets/
+installation/keys/
+
+# Logs
+logs/
+log/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Session data
+sessions/
+.sessions/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+.tmp/
+
+# Test coverage
+coverage/
+.nyc_output/
+htmlcov/
+.coverage
+.coverage.*
+tarpaulin-report.html
+*.profraw
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.iws
+*.iml
+*.ipr
+out/
+.netrwhist
+
+# OS generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Dependencies
+node_modules/
+*.pyc
+__pycache__/
+.Python
+env/
+venv/
+.venv/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+criterion/
+benchmarks/
+*.bench
+
+# Container runtime files
+containers/*/dist/
+containers/*/target/
+Dockerfile.prod.generated
+
+# Security scanner outputs
+.security/
+security-report.*
+audit-report.*
+vulnerability-report.*
+
+# Test artifacts
+test-results/
+test-reports/
+*-test.db
+
+# Local development
+local/
+dev/
+debug/
+
+# Lock files (except Cargo.lock for applications)
+package-lock.json
+yarn.lock
+
+# Rust analyzer
+/rust-project.json
+
+# Docker and container secrets
+.dockerignore
+docker-compose.override.yml
+docker-compose.*.yml
+.docker/
+docker/secrets/
+*.dockerfile.local
+
+# Kubernetes secrets
+k8s-secrets/
+kustomization.yaml
+*.kubeconfig
+kubeconfig*
+
+# Terraform and Infrastructure as Code
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+terraform.rc
+.terraformrc
+# Allow example files
+!*.tfvars.example
+!terraform.rc.example
+
+# Ansible
+*.vault
+vault_pass.txt
+inventory/production
+inventory/staging
+host_vars/*/vault.yml
+group_vars/*/vault.yml
+# Allow example files
+!inventory/production.example
+!inventory/staging.example
+!host_vars/example/
+!group_vars/example/
+
+# CI/CD secrets
+.github/secrets/
+.gitlab-ci-local/
+jenkins/credentials/
+.circleci/config.local.yml
+
+# Package managers
+Pipfile.lock
+poetry.lock
+Gemfile.lock
+composer.lock
+pnpm-lock.yaml
+
+# Cache directories
+.cache/
+.npm/
+.yarn/
+.pnpm-store/
+pip-cache/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Operating System specific
+# macOS extended
+.fseventsd/
+.DocumentRevisions-V100/
+.PKInstallSandboxManager/
+.PKInstallSandboxManager-SystemSoftware/
+
+# Windows extended
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux extended  
+.directory
+.Trash-*/
+.nfs*
+
+# Network and proxy files
+.proxy
+proxy.conf
+.netrc
+.curlrc
+
+# Database dumps and exports
+*.sql
+*.dump
+*.dmp
+*.backup.gz
+export.json
+data-export/
+
+# Monitoring and observability
+grafana/
+prometheus/
+jaeger/
+zipkin/
+.otel/
+metrics/
+traces/
+
+# License and legal
+LICENSES/
+copyright
+*.license
+
+# Documentation builds
+docs/_build/
+site/
+_site/
+public/
+.docusaurus/
+.vuepress/dist/
+
+# Translation files
+*.pot
+*.po
+locale/
+i18n/
+
+# Media files (often large)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.mp3
+*.wav
+*.flac
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.ico
+*.webp
+
+# Archive files
+*.zip
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+
+# Fonts
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# R
+.RData
+.Rhistory
+.Rproj.user/
+
+# MATLAB
+*.asv
+*.mex*
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Vim extended
+.vimrc.local
+.viminfo
+*.un~
+Session.vim
+.netrwhist
+tags
+tags.*
+
+# Emacs extended
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+*_archive
+*_flymake.*
+/eshell/history
+/eshell/lastdir
+/elpa/
+/auto-save-list/
+/.cask/
+/dist/
+/flycheck_*.el
+/server/
+/.projectile
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+sftp-config-alt*.json
+
+# Atom
+.atom/
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+bin/
+obj/
+.vs/
+
+# JetBrains extended
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.classpath
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+out/
+.gradle/
+build/
+local.properties
+proguard/
+lint.xml
+*.pro
+
+# Flutter/Dart
+.packages
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools*
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+/[Uu]ser[Ss]ettings/
+*.stackdump
+*.tmp

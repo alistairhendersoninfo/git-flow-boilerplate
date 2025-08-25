@@ -1,0 +1,59 @@
+{
+  "additionalDirectories": [
+    "/mnt/sdc/alistair/Development",
+    "/mnt/sdb/alistair/Development",
+    "/home/alistair/Development",
+    "/tmp"
+  ],
+  "permissions": {
+    "allow": [
+      "bash(*)",
+      "exec(*)",
+      "git(*)",
+      "gh(*)",
+      "echo(*)",
+      "python(*)",
+      "edit(*)",
+      "write(*)",
+      "multiedit(*)",
+      "notebookedit(*)",
+      "todowrite(*)"
+    ],
+    "ask": [
+      "bash(rm -rf:*)",
+      "bash(rm -r:*)",
+      "bash(rmdir:*)",
+      "bash(shred:*)",
+      "bash(dd:*)",
+      "bash(wipefs:*)",
+      "bash(mkfs:*)",
+      "exec(* rm -rf *)",
+      "exec(* rm -r *)",
+      "exec(* rmdir *)",
+      "exec(* shred *)",
+      "exec(* dd *)",
+      "exec(* wipefs *)",
+      "exec(* mkfs *)",
+      "git(push --delete:*)",
+      "git(branch -D:*)",
+      "git(tag -d:*)",
+      "git(update-ref -d:*)",
+      "git(reset --hard:*)",
+      "git(push --force:*)",
+      "git(clean -fdx:*)",
+      "gh(repo delete:*)",
+      "gh(branch delete:*)",
+      "gh(pr delete:*)",
+      "gh(release delete:*)",
+      "bash(apt:*)",
+      "bash(apt-get:*)",
+      "bash(dpkg -i:*)",
+      "bash(snap install:*)",
+      "exec(* apt *)",
+      "exec(* apt-get *)",
+      "exec(* dpkg -i *)",
+      "exec(* snap install *)"
+    ],
+    "deny": []
+  }
+}

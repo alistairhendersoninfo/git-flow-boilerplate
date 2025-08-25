@@ -1,0 +1,79 @@
+{
+  "mcpServers": {
+    "ssh-mcp-server": { "command": "nc", "args": ["localhost", "3001"], "env": {} }
+  },
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "exec(*)",
+      "git(*)",
+      "gh(*)",
+      "echo(*)",
+      "python(*)",
+      "Edit(*)",
+      "Write(*)",
+      "MultiEdit(*)",
+      "NotebookEdit(*)",
+      "TodoWrite(*)",
+
+      "Bash(apt install:*)",
+      "Bash(apt-get install:*)",
+      "Bash(snap install:*)",
+      "exec(* apt install *)",
+      "exec(* apt-get install *)",
+      "exec(* snap install *)",
+
+      "Bash(make:*)","Bash(cmake:*)","Bash(./configure:*)",
+      "Bash(gcc:*)","Bash(g++:*)","Bash(clang:*)","Bash(clang++:*)",
+      "Bash(rustc:*)","Bash(cargo build:*)","Bash(cargo test:*)",
+      "Bash(go build:*)","Bash(dotnet build:*)","Bash(mvn:*)","Bash(gradle:*)","Bash(sbt:*)",
+      "Bash(npm run build:*)","Bash(yarn build:*)","Bash(pnpm build:*)",
+      "Bash(pip wheel:*)","Bash(python setup.py build:*)",
+
+      "exec(* make *)","exec(* cmake *)","exec(* ./configure *)",
+      "exec(* gcc *)","exec(* g++ *)","exec(* clang *)","exec(* clang++ *)",
+      "exec(* rustc *)","exec(* cargo build *)","exec(* cargo test *)",
+      "exec(* go build *)","exec(* dotnet build *)","exec(* mvn *)","exec(* gradle *)","exec(* sbt *)",
+      "exec(* npm run build *)","exec(* yarn build *)","exec(* pnpm build *)",
+      "exec(* pip wheel *)","exec(* python setup.py build *)"
+    ],
+    "ask": [
+      "Bash(apt remove:*)","Bash(apt-get remove:*)","Bash(apt purge:*)","Bash(apt-get purge:*)",
+      "exec(* apt remove *)","exec(* apt-get remove *)","exec(* apt purge *)","exec(* apt-get purge *)",
+
+      "Bash(rm -rf:*)","Bash(rm -r:*)","Bash(rmdir:*)","Bash(shred:*)",
+      "Bash(find * -delete:*)","Bash(truncate -s 0:*)","Bash(chattr:*)",
+      "Bash(dd:*)","Bash(wipefs:*)","Bash(mkfs:*)","Bash(parted:*)","Bash(fdisk:*)","Bash(sgdisk:*)",
+      "Bash(lvremove:*)","Bash(vgremove:*)","Bash(pvremove:*)","Bash(cryptsetup luksFormat:*)",
+      "Bash(chmod -R:*)","Bash(chown -R:*)","Bash(mount:*)","Bash(umount:*)",
+      "Bash(iptables -F:*)","Bash(nft flush ruleset:*)",
+      "Bash(systemctl disable ssh*:*)","Bash(userdel:*)","Bash(deluser:*)","Bash(groupdel:*)",
+
+      "exec(* rm -rf *)","exec(* rm -r *)","exec(* rmdir *)","exec(* shred *)",
+      "exec(* find * -delete *)","exec(* truncate -s 0 *)","exec(* chattr *)",
+      "exec(* dd *)","exec(* wipefs *)","exec(* mkfs *)","exec(* parted *)","exec(* fdisk *)","exec(* sgdisk *)",
+      "exec(* lvremove *)","exec(* vgremove *)","exec(* pvremove *)","exec(* cryptsetup luksFormat *)",
+      "exec(* chmod -R *)","exec(* chown -R *)","exec(* mount *)","exec(* umount *)",
+      "exec(* iptables -F *)","exec(* nft flush ruleset *)",
+      "exec(* systemctl disable ssh* *)","exec(* userdel *)","exec(* deluser *)","exec(* groupdel *)"
+    ],
+    "deny": [
+      "Bash(ssh:*)","Bash(scp:*)","Bash(sftp:*)","Bash(rsync:*)",
+      "Bash(curl:*)","Bash(wget:*)","Bash(nc:*)","Bash(netcat:*)","Bash(ftp:*)",
+      "Bash(rclone:*)","Bash(aws s3:*)","Bash(kubectl:*)","Bash(helm:*)",
+      "exec(* ssh *)","exec(* scp *)","exec(* sftp *)","exec(* rsync *)",
+      "exec(* curl *)","exec(* wget *)","exec(* nc *)","exec(* netcat *)","exec(* ftp *)",
+      "exec(* rclone *)","exec(* aws s3 *)","exec(* kubectl *)","exec(* helm *)",
+
+      "git(push:*)","git(push --force:*)","git(push --delete:*)",
+      "git(fetch:*)","git(pull:*)","git(clone:*)","git(submodule update:*)","git(remote add:*)",
+      "exec(* git push *)","exec(* git fetch *)","exec(* git pull *)","exec(* git clone *)","exec(* git submodule update *)","exec(* git remote add *)",
+
+      "gh(repo delete:*)","gh(repo archive:*)","gh(pr create:*)","gh(pr merge:*)",
+      "gh(release delete:*)","gh(release upload:*)",
+      "gh(api -X POST:*)","gh(api -X PUT:*)","gh(api -X PATCH:*)","gh(api -X DELETE:*)",
+
+      "exec(* docker push *)"
+    ]
+  }
+}

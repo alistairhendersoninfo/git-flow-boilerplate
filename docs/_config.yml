@@ -1,0 +1,88 @@
+# GitHub Pages Configuration
+title: Universal Git Flow Boilerplate
+description: Comprehensive boilerplate git flow system with multi-language support and automated documentation
+author: Development Team
+email: dev@example.com
+
+# Build settings
+theme: minima
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-mermaid
+
+# Mermaid configuration
+mermaid:
+  src: 'https://unpkg.com/mermaid@8.9.2/dist/mermaid.min.js'
+
+# Navigation
+header_pages:
+  - index.md
+  - getting-started.md
+  - languages/index.md
+  - api/index.md
+  - workflows/index.md
+  - examples/index.md
+
+# Collections
+collections:
+  languages:
+    output: true
+    permalink: /:collection/:name/
+  examples:
+    output: true
+    permalink: /:collection/:name/
+  workflows:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Development Team"
+  - scope:
+      path: ""
+      type: "languages"
+    values:
+      layout: "language"
+  - scope:
+      path: ""
+      type: "examples"
+    values:
+      layout: "example"
+  - scope:
+      path: ""
+      type: "workflows"
+    values:
+      layout: "workflow"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .github/
+  - scripts/
+  - examples/*/target/
+  - examples/*/node_modules/
+  - examples/*/dist/
+  - examples/*/__pycache__/
+  - examples/*/.venv/
+
+# Include
+include:
+  - _pages
+  - _languages
+  - _examples
+  - _workflows
