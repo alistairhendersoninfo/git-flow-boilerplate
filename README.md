@@ -1,7 +1,7 @@
 # Universal Git Flow Boilerplate
 
-[![CI](https://github.com/your-username/git-flow-boilerplate/workflows/CI/badge.svg)](https://github.com/your-username/git-flow-boilerplate/actions)
-[![Documentation](https://github.com/your-username/git-flow-boilerplate/workflows/Documentation/badge.svg)](https://your-username.github.io/git-flow-boilerplate)
+[![CI](https://github.com/alistairhendersoninfo/git-flow-boilerplate/workflows/CI/badge.svg)](https://github.com/alistairhendersoninfo/git-flow-boilerplate/actions)
+[![Documentation](https://github.com/alistairhendersoninfo/git-flow-boilerplate/workflows/Documentation/badge.svg)](https://alistairhendersoninfo.github.io/git-flow-boilerplate)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A comprehensive boilerplate system that provides standardized project templates, automated documentation generation, GitHub Pages integration, and multi-language support for modern development workflows.
@@ -10,7 +10,7 @@ A comprehensive boilerplate system that provides standardized project templates,
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/git-flow-boilerplate.git
+git clone https://github.com/alistairhendersoninfo/git-flow-boilerplate.git
 cd git-flow-boilerplate
 
 # Initialize a new Python project with FastAPI
@@ -227,11 +227,11 @@ gitGraph
 
 ## 📚 Documentation
 
-- 🏠 [Home](https://your-username.github.io/git-flow-boilerplate) - Main documentation site
-- 🚀 [Getting Started](https://your-username.github.io/git-flow-boilerplate/getting-started) - Quick setup guide
-- 🔧 [Language Examples](https://your-username.github.io/git-flow-boilerplate/languages) - Multi-language implementations
-- 📖 [API Documentation](https://your-username.github.io/git-flow-boilerplate/api) - Generated API docs
-- ⚙️ [Workflows](https://your-username.github.io/git-flow-boilerplate/workflows) - CI/CD and Git flow
+- 🏠 [Home](https://alistairhendersoninfo.github.io/git-flow-boilerplate) - Main documentation site
+- 🚀 [Getting Started](https://alistairhendersoninfo.github.io/git-flow-boilerplate/getting-started) - Quick setup guide
+- 🔧 [Language Examples](https://alistairhendersoninfo.github.io/git-flow-boilerplate/languages) - Multi-language implementations
+- 📖 [API Documentation](https://alistairhendersoninfo.github.io/git-flow-boilerplate/api) - Generated API docs
+- ⚙️ [Workflows](https://alistairhendersoninfo.github.io/git-flow-boilerplate/workflows) - CI/CD and Git flow
 
 ## 🧪 Examples
 
@@ -338,16 +338,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📖 [Documentation](https://your-username.github.io/git-flow-boilerplate)
-- 🐛 [Issues](https://github.com/your-username/git-flow-boilerplate/issues)
-- 💬 [Discussions](https://github.com/your-username/git-flow-boilerplate/discussions)
+- 📖 [Documentation](https://alistairhendersoninfo.github.io/git-flow-boilerplate)
+- 🐛 [Issues](https://github.com/alistairhendersoninfo/git-flow-boilerplate/issues)
+- 💬 [Discussions](https://github.com/alistairhendersoninfo/git-flow-boilerplate/discussions)
 - 📧 [Email](mailto:dev@example.com)
 
 ---
 
 <div align="center">
 
-**[⭐ Star this project](https://github.com/your-username/git-flow-boilerplate) if you find it useful!**
+**[⭐ Star this project](https://github.com/alistairhendersoninfo/git-flow-boilerplate) if you find it useful!**
 
 Made with ❤️ by the development community
 

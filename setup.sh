@@ -579,7 +579,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Generated with [Universal Git Flow Boilerplate](https://github.com/your-username/git-flow-boilerplate)
+- Generated with [Universal Git Flow Boilerplate](https://github.com/alistairhendersoninfo/git-flow-boilerplate)
 - Built with $LANGUAGE$([ -n "$FRAMEWORK" ] && echo " and $FRAMEWORK")
 EOF
 }

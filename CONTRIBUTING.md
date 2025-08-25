@@ -29,7 +29,7 @@ Thank you for your interest in contributing to the Universal Git Flow Boilerplat
 1. **Fork the repository**
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/your-username/git-flow-boilerplate.git
+   git clone https://github.com/alistairhendersoninfo/git-flow-boilerplate.git
    cd git-flow-boilerplate
    ```
 3. **Create a feature branch**:
@@ -310,9 +310,9 @@ Contributors are recognized in:
 ## 📞 Getting Help
 
 ### Resources
-- 📖 [Documentation](https://your-username.github.io/git-flow-boilerplate)
-- 💬 [Discussions](https://github.com/your-username/git-flow-boilerplate/discussions)
-- 🐛 [Issues](https://github.com/your-username/git-flow-boilerplate/issues)
+- 📖 [Documentation](https://alistairhendersoninfo.github.io/git-flow-boilerplate)
+- 💬 [Discussions](https://github.com/alistairhendersoninfo/git-flow-boilerplate/discussions)
+- 🐛 [Issues](https://github.com/alistairhendersoninfo/git-flow-boilerplate/issues)
 
 ### Contact
 - **General questions**: Use GitHub Discussions

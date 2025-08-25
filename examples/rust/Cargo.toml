@@ -5,8 +5,8 @@ edition = "2021"
 authors = ["Development Team <dev@example.com>"]
 description = "Hello World example in Rust"
 license = "MIT"
-repository = "https://github.com/your-username/git-flow-boilerplate"
-documentation = "https://your-username.github.io/git-flow-boilerplate"
+repository = "https://github.com/alistairhendersoninfo/git-flow-boilerplate"
+documentation = "https://alistairhendersoninfo.github.io/git-flow-boilerplate"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }

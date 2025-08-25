@@ -11,7 +11,7 @@ A comprehensive boilerplate system that provides standardized project templates,
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/git-flow-boilerplate.git
+git clone https://github.com/alistairhendersoninfo/git-flow-boilerplate.git
 cd git-flow-boilerplate
 
 # Initialize a new project

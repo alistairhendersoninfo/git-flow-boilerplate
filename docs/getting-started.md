@@ -25,7 +25,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/git-flow-boilerplate.git
+git clone https://github.com/alistairhendersoninfo/git-flow-boilerplate.git
 cd git-flow-boilerplate
 ```
 
@@ -261,8 +261,8 @@ bundle exec jekyll doctor
 
 - Check the [FAQ](faq.md)
 - Browse [Examples](examples/)
-- Open an [Issue](https://github.com/your-username/git-flow-boilerplate/issues)
-- Join our [Discussions](https://github.com/your-username/git-flow-boilerplate/discussions)
+- Open an [Issue](https://github.com/alistairhendersoninfo/git-flow-boilerplate/issues)
+- Join our [Discussions](https://github.com/alistairhendersoninfo/git-flow-boilerplate/discussions)
 
 ## Next Steps
 
