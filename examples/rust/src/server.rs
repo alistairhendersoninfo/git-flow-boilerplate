@@ -38,7 +38,11 @@ async fn greet(query: web::Query<GreetingRequest>) -> Result<HttpResponse> {
         message,
         name: name.to_string(),
         language: language.to_string(),
-        timestamp: chrono::Utc::now().to_rfc3339(),
+        timestamp: std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap()
+            .as_secs()
+            .to_string(),
         server: "Rust/Actix-Web".to_string(),
     };
     

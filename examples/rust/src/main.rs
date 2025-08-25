@@ -42,7 +42,11 @@ fn main() {
                 message: message.clone(),
                 name: args.name,
                 language: args.language,
-                timestamp: chrono::Utc::now().to_rfc3339(),
+                timestamp: std::time::SystemTime::now()
+                    .duration_since(std::time::UNIX_EPOCH)
+                    .unwrap()
+                    .as_secs()
+                    .to_string(),
             };
             println!("{}", serde_json::to_string_pretty(&greeting).unwrap());
         }
