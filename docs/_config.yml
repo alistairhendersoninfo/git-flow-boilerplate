@@ -3,6 +3,9 @@ title: Universal Git Flow Boilerplate
 description: Comprehensive boilerplate git flow system with multi-language support and automated documentation
 author: Development Team
 email: dev@example.com
+url: "https://alistairhendersoninfo.github.io"
+baseurl: "/git-flow-boilerplate"
+repository: "alistairhendersoninfo/git-flow-boilerplate"
 
 # Build settings
 theme: minima
